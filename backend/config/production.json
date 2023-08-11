@@ -1,5 +1,5 @@
 {
     "TELEGRAM_TOKEN":"6605860532:AAFBzIsp9WKOi08y82Q14tjRLUvYDIkTAcQ",
     "OPENAI_KEY":"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",
-    "NODE_ENV":"dev"
+    "NODE_ENV":"prod"
 }
