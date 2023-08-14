@@ -24,6 +24,7 @@
     "axios": "^1.4.0",
     "config": "^3.3.9",
     "fluent-ffmpeg": "^2.1.2",
+    "gpt-3-encoder": "^1.1.4",
     "openai": "^3.3.0",
     "telegraf": "^4.12.2"
   }
