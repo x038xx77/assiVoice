@@ -13,18 +13,19 @@ const INITIAL_SSESION = {
 const bot = new Telegraf(config.get('TELEGRAM_TOKEN'))
 bot.use(session())
 
-// // TEST
+// TEST
 // const str = `Many words map to one token, but some don't: indivisible.
-// // Unicode characters like emojis may be split into many tokens containing the underlying bytes: 🤚🏾
-// // Sequences of characters commonly found next to each other may be grouped together: 1234567890`
-// // const encodedAnswer = (encode(str)).length
-// // console.log('Encoded this string looks like: ', encodedAnswer)
+const str = `Приветствие и помощь`
+// Unicode characters like emojis may be split into many tokens containing the underlying bytes: 🤚🏾
+// Sequences of characters commonly found next to each other may be grouped together: 1234567890`
+// const encodedAnswer = (encode(str)).length
+// console.log('Encoded this string looks like: ', encodedAnswer)
 
-// const tokenCount = countAndTrackTokens(str, 'query');
+const tokenCount = countAndTrackTokens(str, 'query');
 
-// console.log(`Ваш запрос: ${str}\n Использовано кол-во токенов в запросе: ${tokenCount}\n Использовано общее количество токенов всех запросов: ${getTotalTokens('query')}`);
+console.log(`Ваш запрос: ${str}\n Использовано кол-во токенов в запросе: ${tokenCount}\n Использовано общее количество токенов всех запросов: ${getTotalTokens('query')}`);
 
-// // END TEST Count Tokens GPT
+// END TEST Count Tokens GPT
 
 
 bot.command('new', async (ctx)=>{

@@ -8,7 +8,7 @@ RUN npm ci
 
 COPY . .
 
-ENV PORT=3000
+ENV PORT=5005
 
 EXPOSE $PORT
 

@@ -1,4 +1,4 @@
 build:
-	docker build -t tgbot .
+	docker build -t assi_voice_tgbot .
 run:
-	docker run -d -p 3000:3000 --name tgbot --rm tgbot
+	docker run -d -p 5005:5005 --name assi_voice_tgbot --rm assi_voice_tgbot
